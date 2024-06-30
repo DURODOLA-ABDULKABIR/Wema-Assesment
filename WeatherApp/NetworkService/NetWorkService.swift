@@ -84,7 +84,6 @@ struct NetworkService {
         let urlString = Route.baseUrl + route.description
         guard let url = urlString.asUrl else { return nil }
         var urlRequest = URLRequest(url: url)
-        print(url, "urrrrllrlllr")
         urlRequest.setValue("application/json", forHTTPHeaderField: HeaderConstant.contentType)
         urlRequest.setValue("application/json", forHTTPHeaderField: HeaderConstant.accept)
         urlRequest.httpMethod = method.rawValue

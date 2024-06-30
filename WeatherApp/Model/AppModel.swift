@@ -80,7 +80,7 @@ struct Wind: Codable {
     let gust: Double?
 }
 
-
+//cod returns int and string values
 enum IntOrString: Codable {
     case int(Int)
     case string(String)

@@ -25,7 +25,6 @@ class WeatherDetailsNetwork {
                         print("Cod as Int: \(value)")
                     case .string(let value):
                         responseStringValue = value
-                        print("Cod as String: \(value)")
                     }
                 }
                 

@@ -21,7 +21,6 @@ enum Method: String {
 
 struct AppID {
     static let appID = "fd6189e087550e277f1ff2a8c51423ab"
-    
 }
 
 extension String {
