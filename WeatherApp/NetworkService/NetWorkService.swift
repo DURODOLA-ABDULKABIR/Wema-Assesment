@@ -45,7 +45,6 @@ struct NetworkService {
             
             if status.statusCode == 401 {
                   DispatchQueue.main.async {
-//                Util.redirectToReturningVC()
                       print("401 Error")
                     return
                 }
@@ -88,9 +87,6 @@ struct NetworkService {
         print(url, "urrrrllrlllr")
         urlRequest.setValue("application/json", forHTTPHeaderField: HeaderConstant.contentType)
         urlRequest.setValue("application/json", forHTTPHeaderField: HeaderConstant.accept)
-//        urlRequest.setValue("\(UserDefault.getAuthToken() ?? "")", forHTTPHeaderField: HeaderConstant.tokenHeader)
-        
-        
         urlRequest.httpMethod = method.rawValue
         
         if let params = parameters {
